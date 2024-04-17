@@ -1,4 +1,5 @@
 package controladores;
+import modelos.Coleccion_carros;
 import java.awt.event.ActionEvent;
 import vistas.Vista_principal_GUI;
 import java.awt.event.ActionListener;
@@ -6,15 +7,17 @@ import java.awt.event.ActionListener;
 public class Controlador_vista_principal_GUI implements ActionListener {
     
     private Vista_principal_GUI vista_principal;
-    //Agregar el objeto coleccion
+    private Coleccion_carros coleccion_carros
     
+    //Metodos
+    //metodo constructor
     public Controlador_vista_principal_GUI(){
         //instancia del objeto vista_principal
         this.vista_principal = new Vista_principal_GUI();
         //Hacer visible la vista_principal
         this.vista_principal.setVisible(true);
         //instanciar el objeto coleccion
-        
+        this.coleccion_carros= new Coleccion_Carros();
         
         //Escuchas que interpretan las acciones sobre los botones
         this.vista_principal.jbtn_agregar.addActionListener(this);

@@ -48,6 +48,12 @@ public class Vista_principal_GUI extends javax.swing.JFrame {
 
         jLabel1.setText("Ano de serie");
 
+        jtf_num_serie.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtf_num_serieActionPerformed(evt);
+            }
+        });
+
         jLabel2.setText("Numero de serie");
 
         jlb_titulo.setText("HOTCOLLECTION");
@@ -112,6 +118,10 @@ public class Vista_principal_GUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jtf_num_serieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtf_num_serieActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtf_num_serieActionPerformed
 
     /**
      * @param args the command line arguments
